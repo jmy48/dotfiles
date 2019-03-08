@@ -26,10 +26,12 @@ nnoremap 3 }
 nnoremap - <C-u>
 nnoremap = <C-d>
 inoremap <C-x> <Esc>u
-
+" insert single char in normal mode
+nnoremap b i <Esc>r
+ 
 " Adding empty lines and spaces
-nnoremap > :<c-u>put! =repeat(nr2char(10), v:count1)<cr>'[
-nnoremap < :<c-u>put =repeat(nr2char(10), v:count1)<cr>
+nnoremap < :<c-u>put! =repeat(nr2char(10), v:count1)<cr>'[
+nnoremap > :<c-u>put =repeat(nr2char(10), v:count1)<cr>
 nnoremap <Space> a<Space><Esc> 
 
 " Moving current line
@@ -49,7 +51,7 @@ set undolevels=100
 " Use system clipboard
 set clipboard=unnamed
 
-" Customize pane split
+" Pane split
 highlight VertSplit guibg=NON cterm=NONE
 set fillchars+=vert:\ 
 
@@ -115,5 +117,5 @@ nmap f <Plug>Sneak_f
 nmap F <Plug>Sneak_F
 
 " Grepper
-nnoremap gb :Grepper<Space>-buffers<Space>-query<Space>-<Space>
 nnoremap gp :Grepper<Space>-query<Space>
+nnoremap gb :Grepper<Space>-buffers<Space>-query<Space>-<Space>
