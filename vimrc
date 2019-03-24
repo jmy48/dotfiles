@@ -13,6 +13,12 @@ nnoremap <S-Left> <C-W><
 nnoremap <S-Down> <C-W>-
 nnoremap <S-Up> <C-W>+
 
+" Open terminal new
+nnoremap <C-l> :vs<CR><C-w><Right>:term<CR>iconda deactivate<CR>
+nnoremap <C-h> :vs<CR><C-w><Left>:term<CR>iconda deactivate<CR>
+nnoremap <C-k> :sp<CR>:term<CR>iconda deactivate<CR>
+nnoremap <C-j> :sp<CR><C-w><Down>:term<CR>iconda deactivate<CR>
+
 " Editing and cursor movement
 noremap q i
 inoremap qw <ESC>:w<CR>l
@@ -23,6 +29,8 @@ noremap e w
 noremap <BS> diw
 nnoremap 2 {
 nnoremap 3 }
+noremap 9 0
+noremap 0 $
 nnoremap - <C-u>
 nnoremap = <C-d>
 inoremap <C-x> <Esc>u
