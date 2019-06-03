@@ -3,11 +3,13 @@ tnoremap <Esc> <C-\><C-n>
 tnoremap qw <C-\><C-n> 
 
 " Automatically enter terminal mode focusing on a terminal window
-autocmd BufWinEnter,WinEnter term://* startinsert
+" autocmd BufWinEnter,WinEnter term://* startinsert
+
 nnoremap <Right> <C-w><Right>
 nnoremap <Left> <C-w><Left>
 nnoremap <Up> <C-w><Up>
 nnoremap <Down> <C-w><Down>
+
 nnoremap <S-Right> <C-W>>
 nnoremap <S-Left> <C-W><
 nnoremap <S-Down> <C-W>-
